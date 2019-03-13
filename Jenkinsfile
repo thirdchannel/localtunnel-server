@@ -27,6 +27,7 @@ pipeline {
                           returnStdout: true
             ).trim()
             app.push head
+            app.push 'latest'
           }
         }
       }
